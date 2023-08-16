@@ -25,6 +25,9 @@ public class HibernateUtils {
         props.put(Environment.USER, "sa");
         props.put(Environment.PASS, "123");
         props.put(Environment.SHOW_SQL, "true");
+
+        conf.setProperties(props);
+
         ServiceRegistry registry = new StandardServiceRegistryBuilder()
                 .applySettings(conf.getProperties()).build();
 
