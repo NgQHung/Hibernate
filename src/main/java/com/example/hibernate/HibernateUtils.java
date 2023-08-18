@@ -19,11 +19,11 @@ public class HibernateUtils {
     static {
         Configuration conf = new Configuration();
         Properties props = new Properties();
-        props.put(Environment.DIALECT, "org.hibernate.dialect.MySQLDialect");
-        props.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
+        props.put(Environment.DIALECT, "org.hibernate..cj.dialect.MySQLDialect");
+        props.put(Environment.DRIVER, "com.mysql.jdbc.Driver");
         props.put(Environment.URL, "jdbc:mysql://localhost/saledb");
-        props.put(Environment.USER, "sa");
-        props.put(Environment.PASS, "123");
+        props.put(Environment.USER, "root");
+        props.put(Environment.PASS, "");
         props.put(Environment.SHOW_SQL, "true");
 
         conf.setProperties(props);
